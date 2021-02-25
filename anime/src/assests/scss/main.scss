@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+*{
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+
+     font-family: 'Reggae One', cursive;
+
+ }
+
+ header {
+   padding-top: 50px;
+   padding-bottom: 50px;;
+ }
+ h1{
+    
+ 
+   
+  background: #6a2eb2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6a2eb2, #2cc3aa); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6a2eb2, #2cc3aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+    text-align: center;
+    font-size: 36px;
+    font-weight: 36px;
+
+ }
+
+ .content-wrap {
+	display: flex;
+
+	aside {
+		flex: 1 1 250px;
+		max-width: 250px;
+		padding-right: 16px;
+
+		nav {
+			padding-left: 16px;
+			padding-right: 16px;
+
+			h3 {
+				color: #313131;
+				font-size: 24px;
+				margin-bottom: 16px;
+			}
+
+			a {
+				display: block;
+				padding: 8px 16px;
+				text-align: left;
+
+				color: #888;
+				font-size: 16px;
+				margin-bottom: 16px;
+
+				background-color: #EEE;
+				border-radius: 999px;
+				text-decoration: none;
+
+				transition: 0.4s;
+
+				&:hover {
+					background-color: #313131;
+					color: #AAA;
+				}
+			}
+		}
+	}
+
+	main {
+		flex: 1 1 0%;
+		padding: 0px 16px;
+
+		.main-head {
+			display: flex;
+			justify-content: center;
+            
+
+			.search-box {
+				display: flex;
+				justify-content: center;
+				flex: auto;
+				
+				input {
+					appearance: none;
+					background: none;
+					outline: none;
+					border: 1 rem;
+
+					display: block;
+					width: 100%;
+					max-width: 400px;
+					padding: 16px;
+					border-radius: 999px;
+					background-color: #EEE;
+
+					transition: 0.4s;
+
+					::placeholder {
+						color: #888;
+					}
+
+					&:focus, &:valid {
+						background-color: #313131;
+						color: #FFF;
+					}
+				}
+			}
+		}
+
+		.anime-list {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 32px;
+			margin: 32px -8px 0px;
+
+			.anime-card {
+				flex: 1 1 33.333%;
+				max-width: 33.333%;
+				padding: 16px 8px;
+
+				a {
+					text-decoration: none;
+				}
+
+				figure {
+					display: block;
+					margin-bottom: 16px;
+
+					img {
+						display: block;
+						width: 100%;
+						height: 350px;
+						object-fit: cover;
+						border-radius: 16px;
+						box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+
+						transition: 0.4s;
+					}
+				}
+
+				h3 {
+					color: #313131;
+				}
+
+				&:hover {
+					figure {
+						img {
+							box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+							transform: scale(1.05);
+						}
+					}
+				}
+			}
+		}
+	}
+}
